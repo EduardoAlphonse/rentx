@@ -1,4 +1,4 @@
-export default {
+export const theme = {
   colors: {
     header: "#1b1b1f",
 

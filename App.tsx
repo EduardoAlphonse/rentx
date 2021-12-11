@@ -15,7 +15,7 @@ import {
 
 import { Home } from "./src/screens/Home";
 
-import theme from "./src/styles/theme";
+import { theme } from "./src/styles/theme";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
