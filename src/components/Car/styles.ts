@@ -7,9 +7,10 @@ export const Container = styled.View`
   align-items: center;
 
   padding: 16px 24px;
-  margin-bottom: 16px;
 
   background-color: ${({ theme }) => theme.colors.background_secondary};
+  border-bottom-width: 2px;
+  border-color: ${({ theme }) => theme.colors.line};
 `;
 
 export const Details = styled.View``;

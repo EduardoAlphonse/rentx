@@ -1,4 +1,5 @@
 import React from "react";
+import { useTheme } from "styled-components";
 
 import GasolineSvg from "../../assets/gasoline.svg";
 
@@ -30,6 +31,8 @@ interface CarProps {
 }
 
 export function Car({ data }: CarProps) {
+  const { colors } = useTheme();
+
   return (
     <Container>
       <Details>
@@ -39,11 +42,11 @@ export function Car({ data }: CarProps) {
         <About>
           <Rent>
             <Period>{data.rent.period}</Period>
-            <Price>R$ {data.rent.price.toFixed(2)}</Price>
+            <Price>R$ {data.rent.price}</Price>
           </Rent>
 
           <FuelType>
-            <GasolineSvg width={20} height={20} />
+            <GasolineSvg width={20} height={20} color={colors.text_details} />
           </FuelType>
         </About>
       </Details>
